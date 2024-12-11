@@ -20,7 +20,7 @@ A prebuilt version of this project already is available on [Docker Hub](https://
 This is an example for a Horizontal Pod Scaler scaling `frontend-http-server` based on the metric `com.dynatrace.builtin:service.responsetime`, expecting the average response time of the monitored service to not increase 1.5 seconds.
 
 ```
-apiVersion: autoscaling/v2beta2
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: frontend-http-server
